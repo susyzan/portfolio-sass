@@ -1,0 +1,41 @@
+/*
+Styles for all global elements
+*/
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85em;
+  line-height: 2;
+  color:#515152;
+  background-color: #fff;
+}
+h1, h2, h3  {
+  font-family: 'Amatic SC', cursive;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+}
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 3em;
+}
+
+a {
+  color:#515152;
+  text-decoration: none;
+  display: block;
+  &:visited {
+    color:#515152;
+  }
+  & img {
+    border: 0;
+  }
+}
+
+.main-container {
+  padding: 1%;
+}

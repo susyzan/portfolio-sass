@@ -1,0 +1,78 @@
+/*
+ Sticky header and hero banner
+ */
+
+.sticky-header{
+  background-color: #fff;;
+  transition: 1s;
+  z-index: 200;
+  -webkit-overflow-scrolling: touch;
+}
+
+.is-sticky .sticky-header {
+  border-bottom-color: rgba(247,120,107,0.8);
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  background-color: rgba(255,255,255,0.85);
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.hero {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  background: linear-gradient(0deg, rgba(152,150,164, 0.8), rgba(152,150,164, 0.8)),  url(../img/coffee-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.hero-mobile {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  background: linear-gradient(0deg, rgba(152,150,164, 0.8), rgba(152,150,164, 0.8)),  url(../img/coffee-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.banner-inner i {
+  font-size: 2.8em;
+}
+.banner-inner {
+  margin: 0 auto;
+  width: 70%;
+  padding: 5% 0 5% 0;
+  font-family: 'Amatic SC', cursive;
+  font-size: 5em;
+  font-weight: 700;
+  text-align: center;
+  color: #f7cac9;
+}
+.heart {
+  color: #f7786b;
+  padding-top: 9%;
+}
+.heart-mobile {
+  color: #f7786b;
+  padding-top: 10%;
+}
+
+@media screen and (min-width: 721px) {
+
+  .hero-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .hero {
+    display: none;
+  }
+  .banner-inner {
+    font-size: 3em;
+    line-height: 1.5;
+  }
+}

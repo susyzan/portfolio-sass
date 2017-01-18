@@ -1,0 +1,62 @@
+/*
+Skills chart
+*/
+
+.container {
+  overflow: hidden;
+  float: left;
+}
+.percent {
+  visibility: hidden;
+}
+.horizontal .progress-bar {
+  float: left;
+  height: 45px;
+  width: 100%;
+  padding: 12px 0;
+  overflow: hidden;
+}
+
+.horizontal .progress-track {
+  position: relative;
+  width: auto;
+  height: 20px;
+  background: #F0EEE9;
+  overflow: hidden;
+}
+
+.horizontal .progress-fill {
+  position: relative;
+  height: 20px;
+  width: 0%;
+  color: #F0EEE9;
+  text-align: center;
+  font-family: "Lato",sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  overflow: hidden;
+}
+
+
+.rounded .progress-track,
+.rounded .progress-fill {
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+  overflow: hidden;
+}
+
+.one {
+  background-color: #f7786b;
+}
+.two {
+  background-color: #f7786b;
+}
+.three {
+  background-color: #f7786b;
+}
+.four {
+  background-color: #f7786b;
+}
+.five {
+  background-color: #f7786b;
+}

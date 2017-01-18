@@ -1,0 +1,97 @@
+/*
+Contact section and Footer
+*/
+
+.contact-section {
+  background-color: #F0EEE9;
+  padding: 5% 3% 3% 3%;
+}
+.contact {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.social {
+  font-weight: 700;
+}
+.social i {
+  font-size: 2.5em;
+}
+.social a {
+  display: inline-block;
+  margin: 0 0.5% 0 0.5%;
+}
+
+.footer {
+  background-color:#9896a4;
+  color: #fffcf8;
+  text-align: center;
+}
+
+#footer-nav ul {
+  list-style: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color: #fffcf8;
+  margin-left: 0;
+}
+
+@media all and (max-width:720px){
+  #footer-nav {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #footer-nav ul li{
+    list-style: none;
+    text-transform: uppercase;
+    width: 25%;
+    float: left;
+    padding: 0 2% 0 0;
+    color: #fffcf8;
+  }
+  #footer-nav ul li a{
+    list-style: none;
+    text-transform: uppercase;
+    float: left;
+    padding: 0 2% 0 0;
+    color: #fffcf8;
+  }
+  #footer-nav ul li a:hover{
+    list-style: none;
+    text-transform: uppercase;
+    float: left;
+    padding: 0 2% 0 0;
+    color: #fffcf8;
+  }
+
+}
+
+
+
+@media all and (min-width:721px){
+
+  #footer-nav ul li{
+    list-style: none;
+    text-transform: uppercase;
+    float: left;
+    margin: 0 2% 0 0;
+    color: #fffcf8;
+  }
+  #footer-nav ul li a{
+    list-style: none;
+    text-transform: uppercase;
+    float: left;
+    margin: 0 2% 0 0;
+    color: #fffcf8;
+  }
+  #footer-nav ul li a:hover{
+    list-style: none;
+    text-transform: uppercase;
+    float: left;
+    margin: 0 2% 0 0;
+    color: #fffcf8;
+  }
+
+}

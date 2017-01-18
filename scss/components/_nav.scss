@@ -1,0 +1,103 @@
+/*
+Navigation
+*/
+
+.logo  {
+  display: block;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 1.1em;
+  text-align: center;
+  text-transform: capitalize;
+  float: left;
+  margin: 1% 0 0 0;
+  padding: 0;
+}
+
+nav {
+  display: block;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+nav a {
+  width: 33.333333%;
+  float: left;
+  padding: 0 10px;
+  font-weight: 700;
+  line-height: 60px;
+  color:#515152;
+  text-align: right;
+}
+nav a:last-child {
+  padding-right: 0;
+}
+nav a:hover {
+  color: #f7786b;
+  font-weight: 700;
+}
+.active {
+  color: #f7786b;
+  font-weight: 700;
+}
+
+//Fix for Android
+body {
+  -webkit-animation: bugfix infinite 1s;
+}
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+  .logo-container {
+    display: none;
+  }
+  nav {
+    width: 90%;
+    margin: 0 auto;
+  }
+  nav a {
+    transition: 0s;
+    width: 25%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 721px) {
+  .is-sticky .logo {
+    display: block;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 1.1em;
+    text-align: center;
+    text-transform: capitalize;
+    float: left;
+    margin: 1% 0 0 0;
+    padding: 0;
+
+  }
+  .home-link {
+    display: none;
+  }
+  nav {
+    width: 70%;
+    margin-right: 5%;
+    margin-left: 25%;
+  }
+  .nav-container {
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
