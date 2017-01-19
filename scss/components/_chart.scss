@@ -9,54 +9,53 @@ Skills chart
 .percent {
   visibility: hidden;
 }
-.horizontal .progress-bar {
-  float: left;
-  height: 45px;
-  width: 100%;
-  padding: 12px 0;
-  overflow: hidden;
+.horizontal {
+  .progress-bar {
+    float: left;
+    height: 45px;
+    width: 100%;
+    padding: 12px 0;
+    overflow: hidden;
+  }
+  .progress-track {
+    position: relative;
+    width: auto;
+    height: 20px;
+    background: $color-light;
+    overflow: hidden;
+  }
+  .progress-fill {
+    position: relative;
+    height: 20px;
+    width: 0%;
+    color: $color-light;
+    text-align: center;
+    font-family: "Lato",sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    overflow: hidden;
+  }
 }
 
-.horizontal .progress-track {
-  position: relative;
-  width: auto;
-  height: 20px;
-  background: #F0EEE9;
-  overflow: hidden;
-}
+  .rounded .progress-track,
+  .rounded .progress-fill {
+    border-radius: 3px;
+    box-shadow: inset 0 0 5px $color-black-rgba;
+    overflow: hidden;
+  }
 
-.horizontal .progress-fill {
-  position: relative;
-  height: 20px;
-  width: 0%;
-  color: #F0EEE9;
-  text-align: center;
-  font-family: "Lato",sans-serif;
-  font-size: 12px;
-  line-height: 20px;
-  overflow: hidden;
-}
-
-
-.rounded .progress-track,
-.rounded .progress-fill {
-  border-radius: 3px;
-  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
-  overflow: hidden;
-}
-
-.one {
-  background-color: #f7786b;
-}
-.two {
-  background-color: #f7786b;
-}
-.three {
-  background-color: #f7786b;
-}
-.four {
-  background-color: #f7786b;
-}
-.five {
-  background-color: #f7786b;
-}
+  .one {
+    background-color: $color-accent;
+  }
+  .two {
+    background-color: $color-accent;
+  }
+  .three {
+    background-color: $color-accent;
+  }
+  .four {
+    background-color: $color-accent;
+  }
+  .five {
+    background-color: $color-accent;
+  }

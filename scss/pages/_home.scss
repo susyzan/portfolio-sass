@@ -5,7 +5,7 @@ Homepage styles
 /* --- *** END Section-1 - About *** --- */
 
 .section1 {
-  background-color: #f7cac9;
+  background-color: $color-primary;
   position: relative;
   width: 100%;
   margin: 0;
@@ -27,10 +27,6 @@ Homepage styles
 
 /* -- Profile image -- */
 
-.profile-image-holder {
-  opacity: 0.9;
-}
-
 .profile {
   width: 180px;
   height: auto;
@@ -38,6 +34,9 @@ Homepage styles
   -webkit-filter: saturate(50%); /* Chrome, Safari, Opera */
   filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' ><filter id='saturate50'><feColorMatrix in='SourceGraphic' type='saturate' values='0.5' /></filter></svg>#saturate50");
   filter: saturate(50%);
+  &-image-holder {
+    opacity: 0.9;
+  }
 }
 /* -- END Profile image -- */
 
@@ -63,7 +62,7 @@ Homepage styles
     height: auto;
   }
   a {
-    color: #F0EEE9;
+    color: $color-light;
   }
 
 }
@@ -92,10 +91,10 @@ Homepage styles
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    background-color: #f7786b;
+    background-color: $color-accent;
     opacity: 0.9;
     padding: 10% 5%;
-    color: #F0EEE9;
+    color: $color-light;
     font-size: 2.2em;
     font-style: italic;
     display: none;
@@ -129,10 +128,10 @@ Homepage styles
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: #f7786b;
+      background-color: $color-accent;
       opacity: 0.9;
       padding: 10% 5%;
-      color: #F0EEE9;
+      color: $color-light;
       font-size: 1.5em;
       font-style: italic;
       display: none;
@@ -164,10 +163,10 @@ Homepage styles
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #f7786b;
+    background-color: $color-accent;
     opacity: 0.9;
     padding: 10% 5%;
-    color: #F0EEE9;
+    color: $color-light;
     font-size: 2em;
     font-style: italic;
     display: none;

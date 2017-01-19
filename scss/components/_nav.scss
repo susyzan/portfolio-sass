@@ -20,25 +20,26 @@ nav {
   font-size: 1.1em;
   font-weight: 700;
   text-transform: uppercase;
+  a {
+    width: 33.333333%;
+    float: left;
+    padding: 0 10px;
+    font-weight: 700;
+    line-height: 60px;
+    color:$text-color;
+    text-align: right;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+  &:hover {
+    color: $color-accent;
+    font-weight: 700;
+  }
 }
-nav a {
-  width: 33.333333%;
-  float: left;
-  padding: 0 10px;
-  font-weight: 700;
-  line-height: 60px;
-  color:#515152;
-  text-align: right;
-}
-nav a:last-child {
-  padding-right: 0;
-}
-nav a:hover {
-  color: #f7786b;
-  font-weight: 700;
-}
+
 .active {
-  color: #f7786b;
+  color: $color-accent;
   font-weight: 700;
 }
 
@@ -63,14 +64,14 @@ body {
   nav {
     width: 90%;
     margin: 0 auto;
-  }
-  nav a {
-    transition: 0s;
-    width: 25%;
-    float: left;
-    padding: 0;
-    margin: 0;
-    text-align: left;
+    a {
+      transition: 0s;
+      width: 25%;
+      float: left;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+    }
   }
 }
 

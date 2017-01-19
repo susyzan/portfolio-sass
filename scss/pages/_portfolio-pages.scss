@@ -4,7 +4,7 @@ Portfolio single projects pages
 
 //title banner
 .portfolio-section {
-  background-color: #f7cac9;
+  background-color: $color-primary;
   position: relative;
   width: 100%;
   margin: 0;
@@ -14,131 +14,125 @@ Portfolio single projects pages
   font-weight: 700;
 }
 
-.project-details {
-  padding: 3% 0 2% 0;
-}
-.project-images{
-  padding: 1% 0;
-  background-color: #FFF;
-  position: relative;
-  text-align: center;
-}
-
-.side {
-  padding: 0 0 5% 0;
-}
-
-
-@media (min-width: 721px ) {
-  .aside {
-    border-left: #9896a4 1px dotted;
-    padding-left: 1.5%;
+.project {
+  &-details {
+    padding: 3% 0 2% 0;
   }
-}
-
-@media (max-width: 720px) {
-
-  .project-image-holder {
+  &-images{
+    padding: 1% 0;
+    background-color: #FFF;
     position: relative;
-  }
-
-  .project-image-holder img {
-    width: 100%;
-    height: auto;
-
-  }
-
-  .project-caption {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #9896a4;
-    opacity: 0.9;
-    padding: 10% 2% 5% 2%;
-    color: #FFF;
-    font-size: 1.5em;
-    line-height: 1.8em;
-    font-style: italic;
-    display: none;
-  }
-
-  .project-caption i {
-    font-size: 3.5em;
+    text-align: center;
   }
 }
 
-
-@media (min-width: 721px ) and (max-width: 938px ) {
-
-
-  .project-image-holder {
-    position: relative;
+  .side {
+    padding: 0 0 5% 0;
   }
 
-  .project-image-holder img {
-    width: 100%;
-    height: auto;
+
+  @media (min-width: 721px ) {
+    .aside {
+      border-left: #9896a4 1px dotted;
+      padding-left: 1.5%;
+    }
   }
 
-  .project-caption {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #9896a4;
-    opacity: 0.9;
-    padding: 10% 2% 5% 2%;
-    color: #FFF;
-    font-size: 1.1em;
-    line-height: 1.2em;
-    font-style: italic;
-    display: none;
+  @media (max-width: 720px) {
 
+    .project {
+      &-image-holder {
+        position: relative;
+      }
+      &-image-holder img {
+          width: 100%;
+          height: auto;
+        }
+        &-caption {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #9896a4;
+          opacity: 0.9;
+          padding: 10% 2% 5% 2%;
+          color: #FFF;
+          font-size: 1.5em;
+          line-height: 1.8em;
+          font-style: italic;
+          display: none;
+        }
+        i {
+            font-size: 3.5em;
+          }
+      }
   }
 
-  .project-caption i {
-    font-size: 3em;
+
+  @media (min-width: 721px ) and (max-width: 938px ) {
+
+    .project {
+      &-image-holder {
+        position: relative;
+      }
+      &-image-holder img {
+        width: 100%;
+        height: auto;
+      }
+      &-caption {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-secondary;
+        opacity: 0.9;
+        padding: 10% 2% 5% 2%;
+        color: $color-white;
+        font-size: 1.1em;
+        line-height: 1.2em;
+        font-style: italic;
+        display: none;
+      }
+      &-caption i {
+        font-size: 3em;
+      }
+
+    }
   }
 
-}
+  @media (min-width: 939px) {
 
-@media (min-width: 939px) {
+    .project {
+      &-image-holder {
+        position: relative;
+      }
+      &-image-holder img {
+        width: 100%;
+        height: auto;
+      }
+      &-caption {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-secondary;
+        opacity: 0.9;
+        padding: 10% 2% 5% 2%;
+        color: $color-white;
+        font-size: 1.1em;
+        line-height: 1.2em;
+        font-style: italic;
+        display: none;
+      }
+      &-caption p {
+        margin: 0;
+      }
+      &-caption i {
+        font-size: 3em;
+      }
 
-
-  .project-image-holder {
-    position: relative;
+    }
   }
-
-  .project-image-holder img {
-    width: 100%;
-    height: auto;
-  }
-
-  .project-caption {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #9896a4;
-    opacity: 0.9;
-    padding: 10% 2% 5% 2%;
-    color: #FFF;
-    font-size: 1.1em;
-    line-height: 1.2em;
-    font-style: italic;
-    display: none;
-  }
-
-  .project-caption p {
-    margin: 0;
-  }
-
-  .project-caption i {
-    font-size: 3em;
-  }
-
-}

@@ -3,12 +3,12 @@ Buttons
 */
 
 .btn {
-  background: #f7786b;
+  background: $color-accent;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   font-family: Arial;
-  color: #ffffff;
+  color: $color-white;
   font-size: 1.2em;
   text-decoration: none;
   width: auto;
@@ -16,31 +16,25 @@ Buttons
   text-transform: uppercase;
   font-weight: bold;
   margin: 5% 5% 5% 0;
+  &:hover {
+    background: $color-secondary;
+    text-decoration: none;
+    color: $color-accent;
+  }
+  a {
+    text-decoration: none;
+    color: $color-light;
+  }
+  &:visited {
+    text-decoration: none;
+    color: $color-light;
+  }
 }
 
-.btn:hover {
-  background: #9896a4;
-  text-decoration: none;
-  color: #f7786b;
-}
-.btn a {
-  text-decoration: none;
-  color: #F0EEE9;
-}
-.btn a:visited {
-  text-decoration: none;
-  color: #F0EEE9;
-}
-
-.copy {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.8em;
-  color: #fffcf8;
-}
 @media (max-width: 720px) {
   a.back-to-top {
     display: none;
-    color: #f7786b;
+    color: $color-accent;
     font-size: 5em;
     position: fixed;
     z-index: 999;
@@ -54,7 +48,7 @@ Buttons
 @media (min-width: 721px) {
   a.back-to-top {
     display: none;
-    color: #f7786b;
+    color: $color-accent;
     font-size: 8em;
     position: fixed;
     z-index: 999;

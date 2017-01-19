@@ -7,8 +7,8 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 0.85em;
   line-height: 2;
-  color:#515152;
-  background-color: #fff;
+  color:$text-color;
+  background-color: $color-white;
 }
 h1, h2, h3  {
   font-family: 'Amatic SC', cursive;
@@ -25,13 +25,13 @@ h2 {
 }
 
 a {
-  color:#515152;
+  color:$text-color;
   text-decoration: none;
   display: block;
   &:visited {
-    color:#515152;
+    color:$text-color;
   }
-  & img {
+  img {
     border: 0;
   }
 }

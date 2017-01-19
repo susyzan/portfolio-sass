@@ -3,17 +3,17 @@
  */
 
 .sticky-header{
-  background-color: #fff;;
+  background-color: $color-white;
   transition: 1s;
   z-index: 200;
   -webkit-overflow-scrolling: touch;
 }
 
 .is-sticky .sticky-header {
-  border-bottom-color: rgba(247,120,107,0.8);
+  border-bottom-color: $color-accent-rgba;
   border-bottom-style: solid;
   border-bottom-width: 3px;
-  background-color: rgba(255,255,255,0.85);
+  background-color: $color-white-rgba;
   -webkit-overflow-scrolling: touch;
   -webkit-transform: translate3d(0, 0, 0);
 }
@@ -23,24 +23,28 @@
   position: relative;
   overflow: hidden;
   margin: 0 auto;
-  background: linear-gradient(0deg, rgba(152,150,164, 0.8), rgba(152,150,164, 0.8)),  url(../img/coffee-background.jpg);
+  background: linear-gradient(0deg, $color-secondary-rgba, $color-secondary-rgba),  url(../img/coffee-background.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  @media screen and (max-width: 720px) {
+    display: none;
+  }
+  &-mobile {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    background: linear-gradient(0deg, $color-secondary-rgba, $color-secondary-rgba), url(../img/coffee-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    @media screen and (min-width: 721px) {
+      display: none;
+    }
+  }
 }
-.hero-mobile {
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-  background: linear-gradient(0deg, rgba(152,150,164, 0.8), rgba(152,150,164, 0.8)),  url(../img/coffee-background.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-.banner-inner i {
-  font-size: 2.8em;
-}
+
 .banner-inner {
   margin: 0 auto;
   width: 70%;
@@ -49,30 +53,23 @@
   font-size: 5em;
   font-weight: 700;
   text-align: center;
-  color: #f7cac9;
-}
-.heart {
-  color: #f7786b;
-  padding-top: 9%;
-}
-.heart-mobile {
-  color: #f7786b;
-  padding-top: 10%;
-}
-
-@media screen and (min-width: 721px) {
-
-  .hero-mobile {
-    display: none;
+  color: $color-primary;
+  i {
+    font-size: 2.8em;
   }
-}
-
-@media screen and (max-width: 720px) {
-  .hero {
-    display: none;
-  }
-  .banner-inner {
+  @media screen and (max-width: 720px) {
     font-size: 3em;
     line-height: 1.5;
   }
 }
+.heart {
+  color: $color-accent;
+  padding-top: 9%;
+  &-mobile {
+    color: $color-accent;
+    padding-top: 10%;
+  }
+}
+
+
+
