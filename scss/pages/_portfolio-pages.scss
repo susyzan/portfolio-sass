@@ -9,7 +9,7 @@ Portfolio single projects pages
   width: 100%;
   margin: 0;
   padding: 0;
-  color: #9896a4;
+  color: $color-secondary;
   text-align: center;
   font-weight: 700;
 }
@@ -20,7 +20,7 @@ Portfolio single projects pages
   }
   &-images{
     padding: 1% 0;
-    background-color: #FFF;
+    background-color: $color-white;
     position: relative;
     text-align: center;
   }
@@ -33,7 +33,7 @@ Portfolio single projects pages
 
   @media (min-width: 721px ) {
     .aside {
-      border-left: #9896a4 1px dotted;
+      border-left: $color-secondary 1px dotted;
       padding-left: 1.5%;
     }
   }
@@ -43,6 +43,9 @@ Portfolio single projects pages
     .project {
       &-image-holder {
         position: relative;
+        div.project-caption{
+          color: $color-white;
+        }
       }
       &-image-holder img {
           width: 100%;
@@ -54,14 +57,16 @@ Portfolio single projects pages
           top: 0;
           width: 100%;
           height: 100%;
-          background-color: #9896a4;
+          background-color: $color-secondary;
           opacity: 0.9;
           padding: 10% 2% 5% 2%;
-          color: #FFF;
           font-size: 1.5em;
           line-height: 1.8em;
           font-style: italic;
           display: none;
+        }
+        &-caption p {
+          color: $color-white;
         }
         i {
             font-size: 3.5em;
@@ -75,6 +80,9 @@ Portfolio single projects pages
     .project {
       &-image-holder {
         position: relative;
+        div.project-caption{
+          color: $color-white;
+        }
       }
       &-image-holder img {
         width: 100%;
@@ -89,11 +97,13 @@ Portfolio single projects pages
         background-color: $color-secondary;
         opacity: 0.9;
         padding: 10% 2% 5% 2%;
-        color: $color-white;
         font-size: 1.1em;
         line-height: 1.2em;
         font-style: italic;
         display: none;
+      }
+      &-caption p {
+        color: $color-white;
       }
       &-caption i {
         font-size: 3em;
@@ -121,7 +131,6 @@ Portfolio single projects pages
         background-color: $color-secondary;
         opacity: 0.9;
         padding: 10% 2% 5% 2%;
-        color: $color-white;
         font-size: 1.1em;
         line-height: 1.2em;
         font-style: italic;
@@ -129,6 +138,7 @@ Portfolio single projects pages
       }
       &-caption p {
         margin: 0;
+        color: $color-white;
       }
       &-caption i {
         font-size: 3em;
