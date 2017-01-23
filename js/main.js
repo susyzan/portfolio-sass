@@ -52,32 +52,25 @@ $(document).ready(function() {
 
 
 
-/* hero background animation !!!!TO BE FIXED!!! problem: position cover
 
-$hero = $('.hero');
-$hero.css({"background-size":"100%"});
+ (function(){
 
-$(document).ready(function(){
+ var parallax = document.querySelectorAll(".hero"),
+ speed = -0.2;
 
-    function zoomIn(){
-        $hero.animate({
-              "background-size":"103%"
-        }, 6000,'swing');
+ window.onscroll = function(){
+ [].slice.call(parallax).forEach(function(el,i){
 
-        $hero.promise().done(zoomOut);
-    }
+ var windowYOffset = window.pageYOffset,
+ elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
 
-    function zoomOut(){
-        $hero.animate({
-            "background-size":"100%"
-        },6000,'swing');
+ el.style.backgroundPosition = elBackgrounPos;
 
-        $hero.promise().done(zoomIn);
-    }
+ });
+ };
 
-    zoomIn();
+ })();
 
-}); */
 
 
 
